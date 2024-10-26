@@ -7,6 +7,9 @@
 
 html{
 	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	scroll-padding: 0 0 0 0;
 }
 
 body{
@@ -227,20 +230,24 @@ ul{
 }
 
 .downloadFrench, .downloadEnglish{
-	background-color: white;
+	background-color: var(--textColorShade);
 	color: var(--accentColor);
 	border: 2px solid var(--accentColor);
 	border-radius: 5px;
-	height: 25px;
+	height: 50px;
+	width: 110px;
 	text-decoration: none;
 	text-align: center;
+	justify-content: center;
 	white-space: nowrap;
 	overflow: hidden;
+	box-sizing: border-box;
+	line-height: 50px;
 }
 
 .downloadFrench:hover, .downloadEnglish:hover{
 	background-color: var(--accentColor);
-	color: white;
+	color: var(--textColorShade);
 	border: 2px solid white;
 }
 
@@ -284,7 +291,7 @@ ul{
 }
 
 .unityProject{
-	margin-top: 170px;
+/*	margin-top: 170px;*/
 	padding-top: 55px;
 	display: flex;
 	position: relative;
@@ -311,7 +318,8 @@ iframe{
 }
 
 .videoContainer{
-	padding-top: 50px;
+	padding-top: 55px;
+	padding-bottom: 80px;
 }
 
 .videoTitle{
