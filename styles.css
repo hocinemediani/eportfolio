@@ -163,6 +163,21 @@ ul{
 
 }
 
+@media screen and (max-width: 700px){
+	.unityProject{
+		display: inline-block !important;
+	}
+
+	.unityProjectImage{
+		margin-left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+
+	.unityProjectText{
+		padding-bottom: 30px !important;
+	}
+}
+
 
 /* Body styles */
 
@@ -291,11 +306,11 @@ ul{
 }
 
 .unityProject{
-/*	margin-top: 170px;*/
 	padding-top: 55px;
 	display: flex;
 	position: relative;
 	z-index: 15;
+	justify-content: flex-end;
 }
 
 .unityProjectImage{
@@ -308,6 +323,7 @@ ul{
 .unityProjectText{
 	padding-top: 5%;
 	padding-left: 20px;
+	padding-bottom: 30px;
 }
 
 iframe{
