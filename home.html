@@ -14,6 +14,7 @@
 	  min-height: 100vh;
 	  background-size: cover;
 	  padding: 0rem 5rem;
+	  z-index: 60;
 	}
 	.intro {
 	  background: black;
@@ -25,6 +26,7 @@
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+	  z-index: 50;
 	}
 	.slider {
 	  background: rgb(97, 105, 109);
@@ -119,6 +121,10 @@
 				<div class="presentationText">
 					<h1>Hello, I am Hocine!</h1>
 					<p>After studying for 2 years at the Lycée du Parc in Lyon, I have been admitted into N7, a school in Toulouse, in Computer Science. With this opportunity, I aim to thrive in this domain with the goal of becoming an engineer in Cybersecurity in mind.</p>
+					<div class="downloadContainer">
+						<a class="downloadFrench" href="./CV_HOCINE-MEDIANI_fr.pdf" download>CV in French</a>
+						<a class="downloadEnglish" href="./CV_HOCINE-MEDIANI_en.pdf" download>CV in English</a>
+					</div>
 				</div>
 			</div>
 			<div class="projectsContainer">
@@ -134,19 +140,19 @@
 					<img src="./evandersAdventures.png" class="unityProjectImage">
 					<div class="unityProjectText">
 						<h1 class="unityTitle">Evander's Adventures</h1>
-						<p class="unityText">Evander's Adventures is a simple 2D platformer game made with Unity using C#. Incarnating Evander, an adventurer, you'll embark in a journey full of twists, in search of the truth in a pixelated world full of lies. </p>
+						<p class="unityText">Evander's Adventures is a simple 2D platformer game made with Unity using C#. Incarnating Evander, an adventurer, you'll embark in a journey full of twists, in search of the truth in a pixelated world full of lies. Explore, slash your enemies and find your way through while enjoying the landscapes.</p>
 					</div>
 				</div>
 			</div>
-			<div class="activitiesContainer">
-
-			</div>
-			<div class="videoContainer">
-				<video></video>
+			<div class="section videoContainer">
+				<div class="videoText">
+					<h1 class="videoTitle">A bit more about myself :</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zZED62sfi_U?si=X1thijnNyuv0V5ND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="section">
+	<footer>
 		<p class="footerText">Copyright © 2024 Hocine Mediani. Tous droits réservés.</p>
 	</footer>
 </body>
