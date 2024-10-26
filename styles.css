@@ -353,6 +353,7 @@ footer{
 	text-align: center;
 	background-color: var(--mainColor);
 	height: 60px;
+	bottom: 0;
 }
 
 footer p{
