@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>E-Portfolio</title>
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.cdnfonts.com/css/october-twilight" rel="stylesheet">	
+</head>
+<style type="text/css">
+	}
+	.landing{
+	  min-height: 100vh;
+	  background-size: cover;
+	  padding: 0rem 5rem;
+	  z-index: 60;
+	}
+	.intro{
+	  background: #0f1016;;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  z-index: 70;
+	}
+	.slider{
+	  background: rgb(97, 105, 109);
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  transform: translateY(100%);
+	}
+	.intro-text{
+	  color: rgb(233, 233, 233);
+	  font-family: "Heebo", sans-serif;
+	  font-size: 3rem;
+	}
+	.hide{
+	  background: #0f1016;;
+	  overflow: hidden;
+	}
+	.hide span{
+	  transform: translateY(100%);
+	  display: inline-block;
+	}
+</style>
+<body>
+	<section class="landing">
+	</section>
+	<div class="intro">
+      	<div class="intro-text">
+        	<h1 class="hide">
+          		<span class="text">Welcome</span>
+        	</h1>
+        	<h1 class="hide">
+          		<span class="text">to my</span>
+        	</h1>
+        	<h1 class="hide">
+          		<span class="text">e-portfolio.</span>
+        	</h1>
+     	</div>
+    </div>
+    <div class="slider"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+	<nav>
+		<ul>
+			<li class="mobileNavElement"><h1 class="mobileNavElementText">Hocine Mediani</h1></li>
+			<li class="navElement">
+				<a class="navElementLink mainButton" href="./index.html">
+					<span class="fullNavText">Home</span>
+					<span class="shortNavText">Home</span>
+				</a>
+			</li>
+			<li class="navElement">
+				<a class="navElementLink otherButtons" href="./engineering.html">
+					<span class="fullNavText">Engineering Course</span>
+					<span class="shortNavText">Engineering</span>
+				</a>
+			</li>
+			<li class="navElement">
+				<a class="navElementLink otherButtons" href="./mobility.html">
+					<span class="fullNavText">International Mobility</span>
+					<span class="shortNavText">Mobility</span>
+				</a>
+			</li>
+			<li class="navElement">
+				<a class="navElementLink otherButtons" href="./engagement.html">
+					<span class="fullNavText">Sustainability & Civic Engagement</span>
+					<span class="shortNavText">Engagement</span>
+				</a>
+			</li>
+			<li class="navElement">
+				<a class="navElementLink otherButtons" href="./career.html">
+					<span class="fullNavText">Career Development</span>
+					<span class="shortNavText">Career</span>
+				</a>
+			</li>
+			<li class="navElement">
+				<a class="navElementLink otherButtons" href="./activities.html">
+					<span class="fullNavText">Sports & Other Activities</span>
+					<span class="shortNavText">Activities</span>
+				</a>
+			</li>
+			<li class="mobileNavElement"><a class="mobileNavElementLink" href="./index.html"><img class="mobileNavElementImg" src="./horizontalRods.png"></a></li>
+		</ul>
+	</nav>
+	<div class="mainContainer">
+		<div class="contentContainer">
+			<div class="section presentationContainer">
+				<div class="presentationImage-div">
+					<img src="./photo.png" class="presentationImage">
+				</div>
+				<div class="presentationText">
+					<h1>Hello, I am Hocine!</h1>
+					<p>After studying for 2 years at the Lycée du Parc in Lyon, I have been admitted into N7, a school in Toulouse, in Computer Science. With this opportunity, I aim to thrive in this domain with the goal of becoming an engineer in Cybersecurity in mind.</p>
+					<div class="downloadContainer">
+						<a class="downloadFrench" target="_blank" href="./CV_HOCINE-MEDIANI_fr.pdf" download>CV in French</a>
+						<a class="downloadEnglish" target="_blank" href="./CV_HOCINE-MEDIANI_en.pdf" download>CV in English</a>
+					</div>
+				</div>
+			</div>
+			<div class="projectsContainer">
+				<div class="section flaskProject">
+					<h1 class="projectsTitle">Personal projects :</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zZED62sfi_U?si=X1thijnNyuv0V5ND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<div class="pythonProjectText">
+						<h1 class="pythonTitle">Web Phone book with Flask</h1>
+						<p class="pythonText">Ever wanted to be able to have your own digital phone book with a pretty web interface that is easy to understand and utilize? Then this project is made for you. Using HTML5 / CSS and Python, this web page is able to store and restore entries the same way a regular phone book would do.</p>
+					</div>
+				</div>
+				<div class="section unityProject">
+					<img src="./evandersAdventures.png" class="unityProjectImage">
+					<div class="unityProjectText">
+						<h1 class="unityTitle">Evander's Adventures</h1>
+						<p class="unityText">Evander's Adventures is a simple 2D platformer game made with Unity using C#. Incarnating Evander, an adventurer, you'll embark in a journey full of twists, in search of the truth in a pixelated world full of lies. Explore, slash your enemies and find your way through while enjoying the landscapes.</p>
+					</div>
+				</div>
+			</div>
+			<div class="section videoContainer">
+				<div class="videoText">
+					<h1 class="videoTitle">A bit more about myself :</h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zZED62sfi_U?si=X1thijnNyuv0V5ND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="footerText">Copyright © 2024 Hocine Mediani. Tous droits réservés.</p>
+	</footer>
+</body>
+</html>
