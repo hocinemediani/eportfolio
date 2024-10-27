@@ -43,7 +43,7 @@ body{
 	text-decoration: none;
 }
 
-.mainButton .navElementLink{
+.mainButton{
 	text-decoration: underline;
 	font-weight: bold;
 	scale: 1.1;
