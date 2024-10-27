@@ -151,6 +151,7 @@ ul{
 	.mobileNavElementText{
 		display: flex;
 		justify-content: flex-start;
+		padding-top: 10px !important;
 	}
 
 	.navElementLink{
@@ -159,6 +160,16 @@ ul{
 
 	.presentationText{
 		padding-left: 0px;
+	}
+
+	.presentationImage{
+		width: 65% !important;
+		height: 45% !important;
+	}
+
+	.contentContainer{
+		width: 85% !important;
+		margin-left: 7.5% !important;
 	}
 
 }
