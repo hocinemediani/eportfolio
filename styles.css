@@ -55,6 +55,7 @@ nav{
 	width: 100%;
 	position: fixed;
 	z-index: 50;
+	top: 0;
 }
 
 ul{
@@ -361,6 +362,7 @@ iframe{
 	font-size: 40pt;
 }
 
+
 /* Footer styles */
 
 
@@ -374,4 +376,20 @@ footer{
 
 footer p{
 	padding-top: 20px;
+}
+
+
+/* Engineering */
+
+
+.gridContainer{
+	display: grid;
+	border: 2px solid var(--mainColor);
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 15px;
+	justify-content: center;
+}
+
+.semesterTitle{
+	text-align: center;
 }
