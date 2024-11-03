@@ -10,9 +10,36 @@
 </head>
 <style type="text/css">
 	.contentContainer{
-		margin-top: 260px;
+		margin-top: 160px;
 		width: 90% !important;
 		margin-left: 5% !important;
+	}
+	.semesterUl{
+		padding: 0;
+		margin:	0;
+		display: inline-block;
+		width: 100%;
+		padding-left: 20%;
+	}
+	.semesterLi{
+		position: relative;
+		color: #f0f0f0;
+		margin-top: 15px;
+		font-size: 14pt;
+	}
+	.semesterLi::before{
+		content: '';
+		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 10px;
+		height: 10px;
+		transform: translate(-15px, 8px);
+		border-radius: 2px;
+	}
+	.semester{
+		background-color: #006aff;
 	}
 </style>
 <body>
@@ -61,31 +88,71 @@
 	<div class="mainContainer">
 		<div class="contentContainer">
 			<div class="gridContainer">
-				<div class="semester5">
+				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 5</h1>
-					<ul>
-						<li>Soft and human skills 1</li>
-						<li>Integration and probabilities</li>
-						<li>Common IT base</li>
-						<li>Numerical analysis and statistics</li>
-						<li>Signal processing and automatic</li>
-						<li>Modeling and architecture</li>
+					<ul class="semesterUl">
+						<li class="semesterLi">Soft and human skills 1</li>
+						<li class="semesterLi">Integration and probabilities</li>
+						<li class="semesterLi">Common IT base</li>
+						<li class="semesterLi">Numerical analysis and statistics</li>
+						<li class="semesterLi">Signal processing and automatic</li>
+						<li class="semesterLi">Modeling and architecture</li>
 					</ul>
 				</div>
-				<div class="semester6">
+				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 6</h1>
+					<ul class="semesterUl">
+						<li class="semesterLi">Soft and human skills 2</li>
+						<li class="semesterLi">Telecommunications</li>
+						<li class="semesterLi">Networks</li>
+						<li class="semesterLi">Scientific computing and data analysis</li>
+						<li class="semesterLi">Object technology</li>
+						<li class="semesterLi">Architecture and systems</li>
+					</ul>
 				</div>
-				<div class="semester7">
+				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 7</h1>
+					<ul class="semesterUl">
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+					</ul>
 				</div>
-				<div class="semester8">
+				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 8</h1>
+					<ul class="semesterUl">
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+					</ul>
 				</div>
-				<div class="semester9">
+				<div class="semester">
 					<h1 class="semesterTitle">Semester 9</h1>
+					<ul class="semesterUl">
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+					</ul>
 				</div>
-				<div class="semester10">
+				<div class="semester">
 					<h1 class="semesterTitle">Semester 10</h1>
+					<ul class="semesterUl">
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Upcoming!</li>
+					</ul>
 				</div>
 			</div>
 		</div>
