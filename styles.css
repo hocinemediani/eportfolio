@@ -376,7 +376,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	gap: 10px;
-	transform: translateX(-30px);
+	width: 100%;
 }
 
 footer p{
