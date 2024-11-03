@@ -145,6 +145,33 @@ ul{
 }
 
 @media screen and (max-width: 770px){
+	.mobileNavOpen {
+        display: inline-block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--mainColor);
+        height: 100vh;
+    }
+
+    .mobileNavOpen .navElement{
+    	padding-top: 40px !important;
+    	padding-left: 5px !important;
+    }
+
+    .mobileNavOpen .mainButton{
+    	scale: 1 !important;
+    }
+
+    .mobileNavOpen .navElementLink {
+        display: block;
+        text-align: center;
+    }
+
+    .mobileNavOpen .mobileNavElementImg{
+		padding-top: 25px;
+    }
+
 	.mobileNavElementImg{
 		display: flex;
 		justify-content: flex-end;

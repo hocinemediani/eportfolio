@@ -70,6 +70,22 @@
     <div class="slider"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script type="text/javascript">
+    	document.addEventListener("DOMContentLoaded", function () {
+    		const mobileNavButton = document.querySelector(".mobileNavElementLink");
+    		const navBar = document.querySelector("nav ul");
+
+    		mobileNavButton.addEventListener("click", function () {
+    			navBar.classList.toggle("mobileNavOpen");
+        		var pic = document.getElementById('pic');
+    			if (navBar.classList == "mobileNavOpen") {
+        			pic.src = "cross.png";
+    			} else {
+    				pic.src = "./horizontalRods.png";
+    			}
+    		});
+		});
+    </script>
 	<nav>
 		<ul>
 			<li class="mobileNavElement"><h1 class="mobileNavElementText">Hocine Mediani</h1></li>
@@ -109,7 +125,7 @@
 					<span class="shortNavText">Activities</span>
 				</a>
 			</li>
-			<li class="mobileNavElement"><a class="mobileNavElementLink" href="./index.html"><img class="mobileNavElementImg" src="./horizontalRods.png"></a></li>
+			<li class="mobileNavElement"><a class="mobileNavElementLink" href="javascript:;"><img class="mobileNavElementImg" src="./horizontalRods.png" id="pic"></a></li>
 		</ul>
 	</nav>
 	<div class="mainContainer">

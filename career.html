@@ -8,6 +8,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.cdnfonts.com/css/october-twilight" rel="stylesheet">
 </head>
+<script type="text/javascript">
+    	document.addEventListener("DOMContentLoaded", function () {
+    		const mobileNavButton = document.querySelector(".mobileNavElementLink");
+    		const navBar = document.querySelector("nav ul");
+
+    		mobileNavButton.addEventListener("click", function () {
+    			navBar.classList.toggle("mobileNavOpen");
+        		var pic = document.getElementById('pic');
+    			if (navBar.classList == "mobileNavOpen") {
+        			pic.src = "cross.png";
+    			} else {
+    				pic.src = "./horizontalRods.png";
+    			}
+    		});
+		});
+</script>
 <style type="text/css">
 	.videoContainer{
 		padding-top: 135px !important;
@@ -72,7 +88,7 @@
 					<span class="shortNavText">Activities</span>
 				</a>
 			</li>
-			<li class="mobileNavElement"><a class="mobileNavElementLink" href="./index.html"><img class="mobileNavElementImg" src="./horizontalRods.png"></a></li>
+			<li class="mobileNavElement"><a class="mobileNavElementLink" href="javascript:;"><img class="mobileNavElementImg" src="./horizontalRods.png" id="pic"></a></li>
 		</ul>
 	</nav>
 	<div class="mainContainer">
