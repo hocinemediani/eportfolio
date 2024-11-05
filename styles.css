@@ -123,10 +123,10 @@ ul{
 
 
 @media screen and (max-width: 1480px){
-	.contentContainer{
+	/*.contentContainer{
 		width: 60% !important;
 		margin-left: 20% !important;
-	}
+	}*/
 
 	.presentationContainer{
 		display: flex !important;
@@ -134,12 +134,12 @@ ul{
 	}
 }
 
-@media screen and (max-width: 1244px){
+/*@media screen and (max-width: 1244px){
 	.contentContainer{
 		width: 70% !important;
 		margin-left: 15% !important;
 	}
-}
+}*/
 
 @media screen and (max-width: 1068px){
 	.presentationContainer{
