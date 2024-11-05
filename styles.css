@@ -145,6 +145,14 @@ ul{
 }
 
 @media screen and (max-width: 770px){
+	.leftMobility .mobilityText{
+		padding: 15px 0 0 0 !important;
+	}
+
+	.rightMobility .mobilityText{
+		padding: 0 0 15px 0 !important;
+	}
+
 	.mobileNavOpen {
         display: inline-block;
         position: fixed;
@@ -436,4 +444,61 @@ footer p{
 	background-color: #0264ed;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+
+/* Mobility */
+
+
+.mobility{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.mobilityImg{
+	width: 100%;
+}
+
+.leftMobility .mobilityText{
+	padding-left: 15px;
+}
+
+.rightMobility .mobilityText{
+	padding-right: 15px;
+}
+
+.mobility{
+	position: relative;
+}
+
+.mobility:nth-child(1){
+	padding-bottom: 50px;
+}
+
+.mobility:nth-child(2){
+	padding: 50px 0 50px 0;
+}
+
+.mobility:nth-child(3){
+	padding:50px 0 95px 0;
+}
+
+.mobility:nth-child(1)::before{
+	content: '';
+	position: absolute;
+	width: 80%;
+	background-color: black;
+	height: 3px;
+	bottom: 0;
+	margin: 0 0 0 10%;
+}
+
+.mobility:nth-child(2)::before{
+	content: '';
+	position: absolute;
+	width: 80%;
+	background-color: black;
+	height: 3px;
+	bottom: 0;
+	margin: 0 0 0 10%;
 }
