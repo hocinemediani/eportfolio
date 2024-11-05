@@ -144,15 +144,18 @@ ul{
 	}
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 874px){
 	.leftMobility .mobilityText{
 		padding: 15px 0 0 0 !important;
 	}
 
 	.rightMobility .mobilityText{
-		padding: 0 0 15px 0 !important;
+		padding: 15px 0 0 0 !important;
+		order: 1;
 	}
+}
 
+@media screen and (max-width: 770px){
 	.mobileNavOpen {
         display: inline-block;
         position: fixed;
@@ -203,17 +206,15 @@ ul{
 		width: 65% !important;
 		height: 45% !important;
 	}
-
-	.contentContainer{
-		width: 85% !important;
-		margin-left: 7.5% !important;
-	}
-
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
 	.unityProject{
 		display: inline-block !important;
+	}
+
+	.mobilityText{
+		padding: 15px 0 0 0;
 	}
 
 	.unityProjectImage{
