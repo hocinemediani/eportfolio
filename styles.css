@@ -251,8 +251,8 @@ ul{
 }
 
 .contentContainer{
-	width: 50%;
-	margin-left: 25%;
+	width: 70%;
+	margin-left: 15%;
 }
 
 .section{
@@ -264,7 +264,7 @@ ul{
 
 
 .presentationContainer{
-	padding-top: 260px;
+	padding-top: 190px;
 	padding-bottom: 55px;
 }
 
@@ -298,7 +298,7 @@ ul{
 }
 
 .presentationImage{
-	width: 200px;
+	width: 340px;
 }
 
 .downloadContainer{
@@ -332,7 +332,8 @@ ul{
 	border: 2px solid white;
 }
 
-	/* Projects Container */
+
+/* Projects Container */
 
 
 .projectsContainer{
@@ -451,7 +452,7 @@ footer p{
 	justify-content: center;
 	gap: 15px;
 	overflow: hidden;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 }
 
 .semesterTitle{
@@ -516,4 +517,8 @@ footer p{
 	height: 3px;
 	bottom: 0;
 	margin: 0 0 0 10%;
+}
+
+.mobilityParagraph{
+	text-align: justify;
 }
