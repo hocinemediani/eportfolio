@@ -1,13 +1,13 @@
 @font-face{
-	font-family: Poppins;
-        src: url();
+	font-family: "Poppins";
+        src: url("Poppins-Light.ttf");
 
 }
 
 *{
 	margin: 0px;
 	padding: 0px;
-	font-family: Poppins;
+	font-family: "Poppins";
 	list-style-type: none;
 }
 
