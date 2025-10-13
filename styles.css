@@ -226,7 +226,7 @@ ul {
 }
 
 @media screen and (max-width: 720px) {
-	.unityProject {
+	.unityProject, .adaProject {
 		display: inline-block !important;
 	}
 
@@ -234,12 +234,12 @@ ul {
 		padding: 15px 0 0 0;
 	}
 
-	.unityProjectImage {
+	.unityProjectImage, .adaProjectImage {
 		margin-left: 50% !important;
 		transform: translateX(-50%) !important;
 	}
 
-	.unityProjectText {
+	.unityProjectText, .adaProjectText {
 		padding-bottom: 30px !important;
 		padding-left: 0px !important;
 	}
