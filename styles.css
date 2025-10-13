@@ -1,25 +1,25 @@
-@font-face{
+@font-face {
 	font-family: "Poppins";
     src: url("Poppins-Regular.ttf");
 }
 
-@font-face{
+@font-face {
 	font-family: "Poppins-bold";
 	src: url("Poppins-Bold.ttf");
 }
 
-h1{
+h1 {
 	font-family: "Poppins-Bold";
 }
 
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Poppins";
 	list-style-type: none;
 }
 
-html{
+html {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 	overflow-y: scroll;
@@ -27,11 +27,11 @@ html{
 	overflow-x: hidden;
 }
 
-body{
+body {
 	background-color: var(--textColor);
 }
 
-:root{
+:root {
 	--mainColor: #0f1016;
 	--textColor: #f0f0f0;
 	--textColorShade: #efefef;
@@ -41,30 +41,30 @@ body{
 
 /* Nav bar styles */
 
-.navElement{
+.navElement {
 	padding-top: 18px;
 }
 
-.navElementLink{
+.navElementLink {
 	color: var(--textColor);
 }
 
-.navElement:hover{
+.navElement:hover {
 	transform: scale(1.1);
 	transition: all .7s ease;
 }
 
-.otherButtons{
+.otherButtons {
 	text-decoration: none;
 }
 
-.mainButton{
+.mainButton {
 	text-decoration: underline;
 	font-weight: bold;
 	scale: 1.1;
 }
 
-nav{
+nav {
 	background-color: var(--mainColor);
 	height: 60px;
 	width: 100%;
@@ -73,14 +73,14 @@ nav{
 	top: 0;
 }
 
-ul{
+ul {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 3%;
 	padding-right: 3%;
 }
 
-.mobileNavElementText{
+.mobileNavElementText {
 	display: none;
 	color: var(--textColor);
 	padding-top: 10px;
@@ -88,14 +88,14 @@ ul{
 	font-family: 'October Twilight';
 }
 
-.mobileNavElementImg{
+.mobileNavElementImg {
 	display: none;
 	height: 50px;
 	width: 50px;
 	padding-top: 5px;
 }
 
-.shortNavText{
+.shortNavText {
 	display: none;
 }
 
@@ -103,17 +103,17 @@ ul{
 /* Media query for the responsive nav bar */
 
 
-@media screen and (max-width: 1280px){
-	ul{
+@media screen and (max-width: 1280px) {
+	ul {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
 
-	.shortNavText{
+	.shortNavText {
 		display: flex;
 	}
 
-	.fullNavText{
+	.fullNavText {
 		display: none;
 	}
 }
@@ -122,58 +122,58 @@ ul{
 /* Media queries for the responsive content */
 
 
-@media screen and (max-width: 1480px){
-	/*.contentContainer{
+@media screen and (max-width: 1480px) {
+	/*.contentContainer {
 		width: 60% !important;
 		margin-left: 20% !important;
 	}*/
 
-	.presentationContainer{
+	.presentationContainer {
 		display: flex !important;
 		justify-content: center !important;
 	}
 }
 
-/*@media screen and (max-width: 1244px){
-	.contentContainer{
+/*@media screen and (max-width: 1244px) {
+	.contentContainer {
 		width: 70% !important;
 		margin-left: 15% !important;
 	}
 }*/
 
-@media screen and (max-width: 1068px){
-	.presentationContainer{
+@media screen and (max-width: 1068px) {
+	.presentationContainer {
 		display: inline-block !important;
 		justify-content: center !important;
 		padding-top: 155px !important;
 	}
 
-	.presentationImage{
+	.presentationImage {
 		width: 45% !important;
 		height: 35% !important;
 	}
 
-	.presentationText h1{
+	.presentationText h1 {
 		font-size: 25pt !important;
 	}
 }
 
-@media screen and (max-width: 874px){
-	.leftMobility .mobilityText{
+@media screen and (max-width: 874px) {
+	.leftMobility .mobilityText {
 		padding: 15px 0 0 0 !important;
 	}
 
-	.rightMobility .mobilityText{
+	.rightMobility .mobilityText {
 		padding: 15px 0 0 0 !important;
 		order: 1;
 	}
 }
 
-@media screen and (max-width: 770px){
-	.intro-text{
+@media screen and (max-width: 770px) {
+	.intro-text {
 		font-size: 2.4rem !important;
 	}
-	.mobileNavOpen {
+	.mobileNavOpen  {
         display: inline-block;
         position: fixed;
         right: 0;
@@ -182,64 +182,64 @@ ul{
         height: 100vh;
     }
 
-    .mobileNavOpen .navElement{
+    .mobileNavOpen .navElement {
     	padding-top: 40px !important;
     	padding-left: 5px !important;
     }
 
-    .mobileNavOpen .mainButton{
+    .mobileNavOpen .mainButton {
     	scale: 1 !important;
     }
 
-    .mobileNavOpen .navElementLink {
+    .mobileNavOpen .navElementLink  {
         display: block;
         text-align: center;
     }
 
-    .mobileNavOpen .mobileNavElementImg{
+    .mobileNavOpen .mobileNavElementImg {
 		padding-top: 25px;
     }
 
-	.mobileNavElementImg{
+	.mobileNavElementImg {
 		display: flex;
 		justify-content: flex-end;
 	}
 
-	.mobileNavElementText{
+	.mobileNavElementText {
 		display: flex;
 		justify-content: flex-start;
 		margin-top: 10px !important;
 	}
 
-	.navElementLink{
+	.navElementLink {
 		display: none;
 	}
 
-	.presentationText{
+	.presentationText {
 		padding-left: 0px;
 	}
 
-	.presentationImage{
+	.presentationImage {
 		width: 65% !important;
 		height: 45% !important;
 	}
 }
 
-@media screen and (max-width: 720px){
-	.unityProject{
+@media screen and (max-width: 720px) {
+	.unityProject {
 		display: inline-block !important;
 	}
 
-	.mobilityText{
+	.mobilityText {
 		padding: 15px 0 0 0;
 	}
 
-	.unityProjectImage{
+	.unityProjectImage {
 		margin-left: 50% !important;
 		transform: translateX(-50%) !important;
 	}
 
-	.unityProjectText{
+	.unityProjectText {
 		padding-bottom: 30px !important;
 		padding-left: 0px !important;
 	}
@@ -249,16 +249,16 @@ ul{
 /* Body styles */
 
 
-.mainContainer{
+.mainContainer {
 	min-height: 100vh;
 }
 
-.contentContainer{
+.contentContainer {
 	width: 70%;
 	margin-left: 14%;
 }
 
-.section{
+.section {
 	scroll-snap-align: start;
 }
 
@@ -266,12 +266,12 @@ ul{
 /* Presentation Container */
 
 
-.presentationContainer{
+.presentationContainer {
 	padding-top: 190px;
 	padding-bottom: 55px;
 }
 
-.presentationContainer{
+.presentationContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -279,32 +279,32 @@ ul{
 	width: 100%;
 }
 
-.presentationText{
+.presentationText {
 	padding-left: 20px;
 	padding-top: 30px;
 	text-align: center;
 }
 
-.presentationText h1{
+.presentationText h1 {
 	font-size: 40pt;
 }
 
-.presentationText p{
+.presentationText p {
 	text-align: justify;
 }
 
-.presentationImage-div{
+.presentationImage-div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 }
 
-.presentationImage{
+.presentationImage {
 	width: 340px;
 }
 
-.downloadContainer{
+.downloadContainer {
 	display: flex;
 	gap: 10px;
 	padding-top: 20px;
@@ -314,7 +314,7 @@ ul{
 	justify-content: space-between;
 }
 
-.downloadFrench, .downloadEnglish{
+.downloadFrench, .downloadEnglish {
 	background-color: var(--textColorShade);
 	color: var(--accentColor);
 	border: 2px solid var(--accentColor);
@@ -330,7 +330,7 @@ ul{
 	line-height: 50px;
 }
 
-.downloadFrench:hover, .downloadEnglish:hover{
+.downloadFrench:hover, .downloadEnglish:hover {
 	background-color: var(--accentColor);
 	color: var(--textColorShade);
 	border: 2px solid white;
@@ -340,16 +340,16 @@ ul{
 /* Projects Container */
 
 
-.projectsContainer{
+.projectsContainer {
 	background-color: var(--textColorShade);
 }
 
-.projectsTitle{
+.projectsTitle {
 	padding-bottom: 5px;
 	font-size: 40pt;
 }
 
-.flaskProject{
+.flaskProject {
 	margin-top: 150px;
 	padding-top: 55px;
 	position: relative;
@@ -357,16 +357,16 @@ ul{
 	padding-bottom: 20px;
 }
 
-.pythonTitle{
+.pythonTitle {
 	padding-top: 5px;
 	text-align: center;
 }
 
-.pythonText, .unityText{
+.pythonText, .unityText, .adaText {
 	text-align: justify;
 }
 
-.flaskProject::after, .unityProject::after{
+.flaskProject::after, .unityProject::after {
 	content: '';
 	position: absolute;
 	background-color: grey;
@@ -376,7 +376,51 @@ ul{
 	left: 0;
 }
 
-.unityProject{
+
+.unityProject {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	display: flex;
+	position: relative;
+	z-index: 15;
+	justify-content: flex-end;
+}
+
+.unityProjectImage {
+	width: 256px;
+	height: 256px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.unityProjectText {
+	padding-top: 5%;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+.unityTitle {
+	text-align: center;
+}
+
+.adaProjectImage {
+	width: 256px;
+	height: 256px;
+	display: flex;
+}
+
+.adaProjectText {
+	padding-top: 5%;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+.adaTitle {
+	text-align: center;
+}
+
+.adaProject {
+	padding-bottom: 55px;
 	padding-top: 55px;
 	display: flex;
 	position: relative;
@@ -384,44 +428,11 @@ ul{
 	justify-content: flex-end;
 }
 
-.unityProjectImage{
-	width: 256px;
-	height: 256px;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.unityProjectText{
-	padding-top: 5%;
-	padding-left: 20px;
-	padding-bottom: 30px;
-}
-
-.unityTitle{
-	text-align: center;
-}
-
-iframe{
-	padding-top: 20px;
-	width: 100%;
-	height: 420px;
-	aspect-ratio: 16/9;
-}
-
-.videoContainer{
-	padding-top: 55px;
-	padding-bottom: 80px;
-}
-
-.videoTitle{
-	font-size: 40pt;
-}
-
 
 /* Footer styles */
 
 
-footer{
+footer {
 	color: var(--textColor);
 	text-align: center;
 	background-color: var(--mainColor);
@@ -434,12 +445,12 @@ footer{
 	width: 100%;
 }
 
-footer p{
+footer p {
 	display: flex;
 	align-items: center;
 }
 
-.linkedinImg{
+.linkedinImg {
 	width: 50px;
 	height: 50px;
 	transform: translateY(5px);
@@ -449,7 +460,7 @@ footer p{
 /* Engineering */
 
 
-.gridContainer{
+.gridContainer {
 	display: grid;
 	border: 2px solid var(--mainColor);
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -459,7 +470,7 @@ footer p{
 	margin-bottom: 30px;
 }
 
-.semesterTitle{
+.semesterTitle {
 	text-align: center;
 	background-color: #527aff;
 	padding-top: 10px;
@@ -470,40 +481,40 @@ footer p{
 /* Mobility */
 
 
-.mobility{
+.mobility {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
-.mobilityImg{
+.mobilityImg {
 	width: 100%;
 }
 
-.leftMobility .mobilityText{
+.leftMobility .mobilityText {
 	padding-left: 15px;
 }
 
-.rightMobility .mobilityText{
+.rightMobility .mobilityText {
 	padding-right: 15px;
 }
 
-.mobility{
+.mobility {
 	position: relative;
 }
 
-.mobility:nth-child(1){
+.mobility:nth-child(1) {
 	padding-bottom: 50px;
 }
 
-.mobility:nth-child(2){
+.mobility:nth-child(2) {
 	padding: 50px 0 50px 0;
 }
 
-.mobility:nth-child(3){
+.mobility:nth-child(3) {
 	padding:50px 0 95px 0;
 }
 
-.mobility:nth-child(1)::before{
+.mobility:nth-child(1)::before {
 	content: '';
 	position: absolute;
 	width: 80%;
@@ -513,7 +524,7 @@ footer p{
 	margin: 0 0 0 10%;
 }
 
-.mobility:nth-child(2)::before{
+.mobility:nth-child(2)::before {
 	content: '';
 	position: absolute;
 	width: 80%;
@@ -523,6 +534,6 @@ footer p{
 	margin: 0 0 0 10%;
 }
 
-.mobilityParagraph{
+.mobilityParagraph {
 	text-align: justify;
 }
