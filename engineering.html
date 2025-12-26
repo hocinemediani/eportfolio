@@ -25,6 +25,49 @@
 		});
 </script>
 <style type="text/css">
+		/* Modern project grid */
+		.projectsGrid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 32px;
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+		.projectCard {
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+			padding: 32px 24px 24px 24px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: transform 0.2s, box-shadow 0.2s;
+			min-height: 420px;
+		}
+		.projectCard:hover {
+			transform: translateY(-8px) scale(1.03);
+			box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+		}
+		.projectCard img, .projectCard iframe {
+			max-width: 100%;
+			border-radius: 10px;
+			margin-bottom: 18px;
+		}
+		.projectCard h2 {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		.projectCard p {
+			font-size: 1rem;
+			text-align: justify;
+		}
+		.projectsTitle {
+			font-size: 2.5rem;
+			margin-bottom: 32px;
+			text-align: center;
+			font-family: "Poppins-Bold";
+		}
 	.contentContainer{
 		margin-top: 160px;
 		width: 90% !important;
@@ -60,6 +103,13 @@
 	.semester{
 		background-color: #dedede;
 	}
+	.fpga{
+		width: 60%;
+		height: 40%;
+	}
+	.docker{
+		width: 60%;
+	}
 </style>
 <body>
 	<nav>
@@ -71,11 +121,15 @@
 					<span class="shortNavText">Home</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink mainButton" href="./engineering.html">
 					<span class="fullNavText">Engineering Course</span>
 					<span class="shortNavText">Engineering</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="#class-content">Class content</a></li>
+					<li><a href="#personal-projects">Personal projects</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./mobility.html">
@@ -91,7 +145,7 @@
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./career.html">
-					<span class="fullNavText">Career Development</span>
+					<span class="fullNavText">Professional project - PPP</span>
 					<span class="shortNavText">Career</span>
 				</a>
 			</li>
@@ -106,7 +160,7 @@
 	</nav>
 	<div class="mainContainer">
 		<div class="contentContainer">
-			<div class="gridContainer">
+			<div id="class-content" class="gridContainer">
 				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 5</h1>
 					<ul class="semesterUl">
@@ -132,12 +186,12 @@
 				<div class="semester semesterSpace">
 					<h1 class="semesterTitle">Semester 7</h1>
 					<ul class="semesterUl">
-						<li class="semesterLi">Upcoming!</li>
-						<li class="semesterLi">Upcoming!</li>
-						<li class="semesterLi">Upcoming!</li>
-						<li class="semesterLi">Upcoming!</li>
-						<li class="semesterLi">Upcoming!</li>
-						<li class="semesterLi">Upcoming!</li>
+						<li class="semesterLi">Soft and human skills 1</li>
+						<li class="semesterLi">Computer Architecture</li>
+						<li class="semesterLi">Language Translation and Functional Programming</li>
+						<li class="semesterLi">Graph Theory and Networks</li>
+						<li class="semesterLi">Concurrent Systems and Middleware</li>
+						<li class="semesterLi">Local and Telecommunication Networks</li>
 					</ul>
 				</div>
 				<div class="semester semesterSpace">
@@ -172,6 +226,41 @@
 						<li class="semesterLi">Upcoming!</li>
 						<li class="semesterLi">Upcoming!</li>
 					</ul>
+				</div>
+			</div>
+			<div id="personal-projects" class="projectsContainer">
+				<h1 class="projectsTitle">Personal projects :</h1>
+				<div class="projectsGrid">
+					<div class="projectCard" id="web-phonebook">
+						<iframe width="100%" height="180" src="https://www.youtube.com/embed/zZED62sfi_U?si=X1thijnNyuv0V5ND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<h2>Web Phone book with Flask</h2>
+						<p>Ever wanted to be able to have your own digital phone book with a pretty web interface that is easy to understand and utilize ? Then this project is made for you. Using HTML5 / CSS and Python, this web page is able to store and restore entries the same way a regular phone book would do.</p>
+					</div>
+					<div class="projectCard" id="unity-game">
+						<img src="./evandersAdventures.png" alt="Evander's Adventures" class="unityProjectImage">
+						<h2>Evander's Adventures</h2>
+						<p>Evander's Adventures is a simple 2D platformer game made with Unity using C#. Embodying Evander, an adventurer, you'll embark in a journey full of twists, in search of the truth in a pixelated world full of lies. Explore, slash your enemies and find your way through while enjoying the landscapes.</p>
+					</div>
+					<div class="projectCard" id="huffman">
+						<img src="./compression.png" alt="Huffman File Compression" class="adaProjectImage">
+						<h2>Huffman File Compression</h2>
+						<p>Using Huffman's compression algorithm, this program is able to compress and decompress any binary file with ease and without losing a single piece of information. No more lack of storage space will ever get to you, as storing and then re-utilizing files will take less space than ever !</p>
+					</div>
+					<div class="projectCard">
+						<img class = "fpga" src="fpga.png" alt="Nexys 4 FPGA">
+						<h2>UART Nexys 4</h2>
+						<p>UARTs have been always used for serie communication between a microcontroler and one of its serie ports. This project simulates a UART full receiving/emitting communication on the Nexys 4 DDR FPGA card, using a minicom terminal to communicate with the card.</p>
+					</div>
+					<div class="projectCard">
+						<img src="simplesAdventures.png" alt="Placeholder Project 5">
+						<h2>Simple's Adventure</h2>
+						<p>Simple is a pretty simple guy. And like any other simple guy, he strives for one thing : POWER! Play as Simple and explore an entirely unique world made of multiple regions with their own sets of ressources, challenges, and enemies. Slay your way through every obstacles on the path to glory and become more than just another simple guy.</p>
+					</div>
+					<div class="projectCard">
+						<img class = "docker" src="docker.png" alt="Docker Network">
+						<h2>Docker ISP simulation</h2>
+						<p>ISPs have always been seen has granted but the way they function has always been a blackbox for me. To better understand this, this project focuses on recreating an Autonomous System that acts as an ISP, interconnecting other ASs and granting a private and safe access to the rest of the network for its customers.</p>
+					</div>
 				</div>
 			</div>
 		</div>

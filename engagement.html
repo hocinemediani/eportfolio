@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Civic Engagement</title>
+	<title>Civic Engagement & Service</title>
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +26,57 @@
 </script>
 <style type="text/css">
 	.contentContainer{
-		padding-top: 55px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		max-width: 900px;
+		margin: 0 auto;
 	}
-
-	.contentContainer h1{
-		padding-top: 250px;
-		text-align: center;
-		font-size: 60px;
-	}
+.engagementTitle {
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 40px;
+	padding-top: 40px;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0 20px 30px;
+    border-left: 4px solid var(--accentColor);
+    max-width: 700px;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+.timeline-dot {
+    position: absolute;
+    left: -14px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: var(--accentColor);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 4px #e0e0e0;
+}
+.timeline-content {
+    background: var(--textColorShade);
+    padding: 18px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-left: 10px;
+}
+.timeline-content h2 {
+    margin: 0 0 8px 0;
+    color: var(--accentColor);
+    font-size: 22px;
+}
+.timeline-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #222;
+}
 </style>
 <body>
 	<nav>
@@ -45,11 +88,15 @@
 					<span class="shortNavText">Home</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink otherButtons" href="./engineering.html">
 					<span class="fullNavText">Engineering Course</span>
 					<span class="shortNavText">Engineering</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="./engineering.html#class-content">Class content</a></li>
+					<li><a href="./engineering.html#personal-projects">Personal projects</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./mobility.html">
@@ -65,8 +112,8 @@
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./career.html">
-					<span class="fullNavText">Career Development</span>
-					<span class="shortNavText">Career</span>
+					<span class="fullNavText">Professional Project - PPP</span>
+					<span class="shortNavText">PPP</span>
 				</a>
 			</li>
 			<li class="navElement">
@@ -79,10 +126,40 @@
 		</ul>
 	</nav>
 	<div class="mainContainer">
-		<div class="contentContainer">
-			<h1>Under construction!</h1>
-		</div>
-	</div>
+    <div class="contentContainer">
+        <h1 class="engagementTitle">Associative Activities</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>2024-2025 - Cordées de la Réussite</h2>
+                    <p>Accompagnement d'élèves de 3ème au collège Rosa Parks (Toulouse) : orientation, préparation à l'oral du brevet, mentorat et ateliers de découverte.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>2018-2020 - Aide aux cours enfants d'arts martiaux</h2>
+                    <p>Encadrement et aide à l'enseignement du Vovinam Viet Vo Dao à Toulon pour les enfants.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>2016 - France Vietnam</h2>
+                    <p>Récolte de plusieurs milliers d'euros via la vente de gâteaux pour financer nourriture et fournitures scolaires pour des enfants défavorisés au Vietnam.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h2>Récolte hôpitaux d'Algérie</h2>
+                    <p>Récolte et distribution de friandises et d'habits pour les enfants malades dans des hôpitaux en Algérie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 	<footer>
 		<a href="https://www.linkedin.com/in/hocine-mediani" target="_blank"><img class="linkedinImg" src="./linkedin.png"></a>
 		<p class="footerText">Copyright © 2025 Hocine Mediani. Tous droits réservés.</p>

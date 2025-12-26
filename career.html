@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Career Development</title>
+	<title>Professional Development</title>
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,6 +44,32 @@
 		font-size: 34pt;
 	}
 
+	.downloadPPP {
+		display: inline-block;
+		background-color: var(--textColorShade);
+		color: var(--accentColor);
+		border: 2px solid var(--accentColor);
+		border-radius: 5px;
+		min-height: 50px;
+		min-width: 220px;
+		max-width: 100%;
+		padding: 0 24px;
+		text-decoration: none;
+		text-align: center;
+		line-height: 50px;
+		font-size: 1.1rem;
+		margin-top: 20px;
+		transition: background 0.3s, color 0.3s, border 0.3s;
+		white-space: normal;
+		word-break: break-word;
+		box-sizing: border-box;
+	}
+	.downloadPPP:hover {
+		background-color: var(--accentColor);
+		color: var(--textColorShade);
+		border: 2px solid white;
+	}
+
 	embed{
 		min-height: 100vh;
 	}
@@ -58,11 +84,15 @@
 					<span class="shortNavText">Home</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink otherButtons" href="./engineering.html">
 					<span class="fullNavText">Engineering Course</span>
 					<span class="shortNavText">Engineering</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="./engineering.html#class-content">Class content</a></li>
+					<li><a href="./engineering.html#personal-projects">Personal projects</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./mobility.html">
@@ -78,7 +108,7 @@
 			</li>
 			<li class="navElement">
 				<a class="navElementLink mainButton" href="./career.html">
-					<span class="fullNavText">Career Development</span>
+					<span class="fullNavText">Professional Project - PPP</span>
 					<span class="shortNavText">Career</span>
 				</a>
 			</li>
@@ -95,8 +125,8 @@
 		<div class="contentContainer">
 			<div class="section videoContainer">
 				<div class="videoText">
-					<h1 class="videoTitle">A bit more about myself :</h1>
-					<iframe width="100%" height="350px" src="https://www.youtube.com/embed/98j28NvdT7c?si=9OkLq0Vz61H-yvoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<h1 class="videoTitle">Download my PPP slideshow :</h1>
+					<a class="downloadPPP" href="./ppp.pdf" download>Download PPP Slideshow (PDF)</a>
 				</div>
 			</div>
 			<div class="secondContent section">

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Sports & Activities</title>
+	<title>Extracurricular Activities</title>
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,61 @@
 		});
 </script>
 <style type="text/css">
-	
+	.activitiesTitle {
+		text-align: center;
+		font-size: 48px;
+		margin-bottom: 40px;
+		padding-top: 40px;
+	}
+.activitiesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.activityCard {
+    background: var(--textColorShade);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px;
+    max-width: 340px;
+    min-width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.activityCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+.activityImg {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border: 3px solid var(--accentColor);
+    background: #fff;
+}
+.activityCard h2 {
+    margin: 0 0 10px 0;
+    color: var(--accentColor);
+    font-size: 26px;
+}
+.activityCard p {
+    color: #222;
+    font-size: 16px;
+}
+
+	.contentContainer {
+		padding-top: 30px !important;
+		padding-bottom: 30px !important;
+		width: 80% !important;
+		margin-left: 10% !important;
+	}
 </style>
 <body>
 	<nav>
@@ -37,11 +91,15 @@
 					<span class="shortNavText">Home</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink otherButtons" href="./engineering.html">
 					<span class="fullNavText">Engineering Course</span>
 					<span class="shortNavText">Engineering</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="./engineering.html#class-content">Class content</a></li>
+					<li><a href="./engineering.html#personal-projects">Personal projects</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./mobility.html">
@@ -57,7 +115,7 @@
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./career.html">
-					<span class="fullNavText">Career Development</span>
+					<span class="fullNavText">Professional Project - PPP</span>
 					<span class="shortNavText">Career</span>
 				</a>
 			</li>
@@ -71,10 +129,27 @@
 		</ul>
 	</nav>
 	<div class="mainContainer">
-		<div class="contentContainer">
-			
-		</div>
-	</div>
+    <div class="contentContainer">
+		<h1 class="activitiesTitle">My Activities</h1>
+        <div class="activitiesGrid">
+            <div class="activityCard">
+                <img src="./muscu.webp" alt="Musculation" class="activityImg">
+				<h2>Weight Training</h2>
+				<p>Passionate about weight training for several years, I work out regularly to improve my strength, discipline, and physical well-being.</p>
+            </div>
+            <div class="activityCard">
+                <img src="./meca.jpg" alt="Mécanique automobile" class="activityImg">
+				<h2>Car Mechanics</h2>
+				<p>I enjoy dismantling, repairing, and maintaining cars to better understand how they work. Mechanics is a real hands-on learning field for me, a passion passed down from my father.</p>
+            </div>
+            <div class="activityCard">
+                <img src="./cuisine.jpg" alt="Cuisine" class="activityImg">
+				<h2>Cooking</h2>
+				<p>Cooking is a way to express myself and share with others. I love trying new recipes, discovering flavors, and delighting those around me.</p>
+            </div>
+        </div>
+    </div>
+</div>
 	<footer>
 		<a href="https://www.linkedin.com/in/hocine-mediani" target="_blank"><img class="linkedinImg" src="./linkedin.png"></a>
 		<p class="footerText">Copyright © 2025 Hocine Mediani. Tous droits réservés.</p>
