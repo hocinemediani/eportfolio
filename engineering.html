@@ -40,6 +40,7 @@
 			padding: 32px 24px 24px 24px;
 			display: flex;
 			flex-direction: column;
+			justify-content: flex-end;
 			align-items: center;
 			transition: transform 0.2s, box-shadow 0.2s;
 			min-height: 420px;
@@ -104,8 +105,8 @@
 		background-color: #dedede;
 	}
 	.fpga{
-		width: 60%;
-		height: 40%;
+		width: 70%;
+		aspect-ratio: 1.2;
 	}
 	.docker{
 		width: 60%;
@@ -143,11 +144,15 @@
 					<span class="shortNavText">Engagement</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink otherButtons" href="./career.html">
 					<span class="fullNavText">Professional project - PPP</span>
 					<span class="shortNavText">Career</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="./career.html#ppp">PPP</a></li>
+					<li><a href="./career.html#internships">Internships</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./activities.html">
@@ -232,7 +237,7 @@
 				<h1 class="projectsTitle">Personal projects :</h1>
 				<div class="projectsGrid">
 					<div class="projectCard" id="web-phonebook">
-						<iframe width="100%" height="180" src="https://www.youtube.com/embed/zZED62sfi_U?si=X1thijnNyuv0V5ND" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="100%" height="180" src="https://www.youtube.com/embed/zZED62sfi_U?si=W1XcXDCrBc-JPNEl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						<h2>Web Phone book with Flask</h2>
 						<p>Ever wanted to be able to have your own digital phone book with a pretty web interface that is easy to understand and utilize ? Then this project is made for you. Using HTML5 / CSS and Python, this web page is able to store and restore entries the same way a regular phone book would do.</p>
 					</div>

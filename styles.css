@@ -39,7 +39,6 @@
 	font-size: 16px;
 }
 .dropdownContent li a:hover {
-	background-color: var(--accentColor);
 	color: var(--textColorShade);
 }
 @font-face {
@@ -369,6 +368,36 @@ ul {
 	text-decoration: none;
 	text-align: center;
 	justify-content: center;
+	white-space: nowrap;
+	overflow: hidden;
+	box-sizing: border-box;
+	line-height: 50px;
+}
+
+.downloadContainerPPP {
+	display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.downloadFrenchPPP, .downloadEnglishPPP {
+	background-color: var(--textColorShade);
+	color: var(--accentColor);
+	border: 2px solid var(--accentColor);
+	border-radius: 5px;
+	height: 100px;
+	width: 220px;
+	text-decoration: none;
+	display: grid;
+	place-items: center;
+	font-size: 15pt;
+	text-align: center;
+	line-height: 100px;
 	white-space: nowrap;
 	overflow: hidden;
 	box-sizing: border-box;

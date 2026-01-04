@@ -44,6 +44,11 @@
 		font-size: 34pt;
 	}
 
+	.downloadText{
+		display: flex;
+		justify-content: center;
+	}
+
 	.downloadPPP {
 		display: inline-block;
 		background-color: var(--textColorShade);
@@ -108,11 +113,15 @@
 					<span class="shortNavText">Engagement</span>
 				</a>
 			</li>
-			<li class="navElement">
+			<li class="navElement navDropdown">
 				<a class="navElementLink mainButton" href="./career.html">
-					<span class="fullNavText">Professional Project - PPP</span>
+					<span class="fullNavText">Professional project - PPP</span>
 					<span class="shortNavText">Career</span>
 				</a>
+				<ul class="dropdownContent">
+					<li><a href="./career.html#ppp">PPP</a></li>
+					<li><a href="./career.html#internships">Internships</a></li>
+				</ul>
 			</li>
 			<li class="navElement">
 				<a class="navElementLink otherButtons" href="./activities.html">
@@ -125,19 +134,22 @@
 	</nav>
 	<div class="mainContainer">
 		<div class="contentContainer">
-			<div class="section videoContainer">
+			<div class="section videoContainer" id="ppp">
 				<div class="videoText">
 					<h1 class="videoTitle">Download my PPP slideshow :</h1>
 					<a class="downloadPPP" href="./ppp.pdf" download>Download PPP Slideshow (PDF)</a>
+					<embed src="ppp.pdf" style="padding-top: 14px;" width="100%"/>
 				</div>
 			</div>
-			<div class="secondContent section">
-				<h1 class="downloadText">Download my CV here :</h1>
-				<div class="downloadContainer">
-					<a class="downloadFrench" target="_blank" href="./CV_HOCINE-MEDIANI_fr.pdf" download>CV in French</a>
-					<a class="downloadEnglish" target="_blank" href="./CV_HOCINE-MEDIANI_en.pdf" download>CV in English</a>
+			<div class="secondContent section" id="internships">
+				<h1 class="downloadText">Internships :</h1>
+				<h2 style="padding: 15px 0px 15px 0px;">Intership offer from NAVAL GROUP</h2>
+				<img src="./internshipOffer.png" width="100%" style="padding-left: 50%; transform: translateX(-33.3333%);">
+				<div class="downloadContainerPPP">
+					<a class="downloadFrenchPPP" target="_blank" href="./CV_Hocine_MEDIANI_Stage_M1.pdf" download>CV in french</a>
+					<a class="downloadEnglishPPP" target="_blank" href="./Lettre_de_motivation.pdf" download>Cover letter</a>
 				</div>
-				<embed src="CV_HOCINE-MEDIANI_en.pdf" width="100%"/>
+				<embed src="CV_Hocine_MEDIANI_Stage_M1.pdf" width="100%"/>
 			</div>
 		</div>
 	</div>
